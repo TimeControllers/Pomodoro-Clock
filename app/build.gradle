@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.tomato'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.tomato"
@@ -12,7 +12,6 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -29,6 +28,8 @@ android {
     buildFeatures {
         viewBinding true
     }
+    externalNativeBuild {
+    }
 }
 
 dependencies {
@@ -36,19 +37,43 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    //
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'com.android.support:support-v4:27.1.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
+
+//    implementation 'com.android.support:design:27.1.1'
+//    implementation 'com.android.support:support-v4:27.1.1'
+
     implementation 'androidx.navigation:navigation-fragment:2.5.2'
     implementation 'androidx.navigation:navigation-ui:2.5.2'
 
     implementation 'com.squareup.okhttp3:okhttp:3.14.7'
     implementation 'com.squareup.okio:okio:1.17.5'
-    implementation files('libs\\mysql-connector-java-5.1.46-bin.jar')
+    implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation files('libs\\activation.jar')
+    implementation files('libs\\additionnal.jar')
+    implementation files('libs\\mail.jar')
+    implementation files('libs\\commons-beanutils-1.9.3.jar')
+    implementation files('libs\\commons-collections-3.2.jar')
+    implementation files('libs\\commons-lang-2.3.jar')
+    implementation files('libs\\commons-logging-1.2.jar')
+    implementation files('libs\\ezmorph-1.0.6.jar')
+    implementation files('libs\\json-lib-2.4-jdk15.jar')
+
     //
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'io.github.medyo:android-about-page:2.0.0'
+    implementation 'com.yalantis:phoenix:1.2.3'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.mikhaellopez:circularfillableloaders:1.4.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.mikhaellopez:circularfillableloaders:1.2.0'
+
+
 
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="190px"
+        android:layout_height="78dp"
+        android:layout_margin="5px"
+        android:src="@drawable/good"/>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:textStyle="bold"
+            android:textSize="50px"
+            android:text="name"/>
+
+        <TextView android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:textSize="45px"
+            android:text="email"/>
+        <TextView android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:textSize="45px"
+            android:text="score:"/>
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_findLockId"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/good"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

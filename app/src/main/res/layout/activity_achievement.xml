@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="已获得"
+                android:gravity="center"
+                android:textSize="45sp"/>
+
+            <GridView
+                android:id="@+id/gv_achievement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2">
+
+            </GridView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="45sp"
+                android:gravity="center"
+                android:text="未获得"/>
+            <GridView
+                android:id="@+id/gv_achievement_not"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2">
+
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

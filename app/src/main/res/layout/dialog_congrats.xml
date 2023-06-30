@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    >
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_weight="3"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Congratulations"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+
+        android:text=" You have completed \n your potion!"
+        android:textColor="@color/black"
+        android:paddingTop="3dp"></TextView>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:paddingTop="5dp"
+        android:layout_width="152dp"
+        android:layout_height="128dp"
+        android:layout_weight="3"
+        android:background="@drawable/potion" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text=" You now have..."
+        android:textColor="@color/black"
+        android:paddingTop="3dp"></TextView>
+    <TextView
+        android:id="@+id/minNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text=" ______ total minutes"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        ></TextView>
+    <TextView
+        android:id="@+id/potionNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="  ______ potions"
+        android:textColor="@color/black"
+       ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="NICE!"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

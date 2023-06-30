@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/white">
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <!--账号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="邮        箱："/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebEmailAddress"
+            android:id="@+id/et_email"
+            android:hint="请输入注册邮箱" />
+    </LinearLayout>
+
+    <!--密码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="新   密   码："/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/et_pwd"
+            android:hint=" 再次输入" />
+    </LinearLayout>
+
+    <!--新密码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="新  密  码："/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/et_rePwd"
+            android:hint="再次输入修改密码"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_verificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            android:layout_toLeftOf="@+id/btn_sendVerificationCode"
+            android:layout_alignParentStart="true"/>
+
+
+
+
+        <Button
+            android:id="@+id/btn_sendVerificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送验证码"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@id/et_verificationCode"/>
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="修改密码"
+            android:textSize="30sp"/>
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+
+</LinearLayout>
+
+    </com.yalantis.phoenix.PullToRefreshView>
+
+</LinearLayout>

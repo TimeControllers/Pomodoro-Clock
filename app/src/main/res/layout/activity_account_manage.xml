@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账号管理"
+        android:textSize="35sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="邮箱名"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/tv_manage_email"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text=""
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+        </View>
+        <Button
+            android:id="@+id/relogin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:text="重新登录" />
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:text="退出登录" />
+        <Button
+            android:id="@+id/changePasswordBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:text="修改密码" />
+
+    </LinearLayout>
+
+</LinearLayout>

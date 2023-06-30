@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Tomato</string>
-
-
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="feed_back">&#xe636;</string>
+    <string name="about">&#xe63e;</string>
+    <string name="setting">&#xe63f;</string>
+    <string name="friend">&#xe64d;</string>
+    <string name="account">&#xe64f;</string>
+    <string name="version">&#xe650;</string>
+    <string name="person">&#xe657;</string>
+    <string name="arrow">&#xe658;</string>
 </resources>

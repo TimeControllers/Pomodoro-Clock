@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    >
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_weight="3"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Set a Time"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <NumberPicker
+            android:id="@+id/minutePicker"
+            android:layout_width="83dp"
+            android:layout_height="114dp"
+            android:theme="@style/NumberPickerTheme"></NumberPicker>
+
+        <TextView
+            style="@style/Widget.AppCompat.TextView"
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text=":"
+            android:textSize="30sp"
+            ></TextView>
+
+        <NumberPicker
+            android:id="@+id/secPicker"
+            android:layout_width="83dp"
+            android:layout_height="114dp"
+            android:theme="@style/NumberPickerTheme"></NumberPicker>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+
+        >
+        <Button
+            android:id="@+id/cancelEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="cancel"
+            android:padding="5dp"></Button>
+        <Button
+            android:id="@+id/submitEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="SET"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

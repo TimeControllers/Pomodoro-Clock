@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedBackActivity"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/settingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dp"
+            android:singleLine="true"
+            android:text="意见反馈"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/feedback_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:hint="       请填写十个字以上的问题描述以便我们更好提供帮助（最长不超过200字）"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLength="200"
+        android:maxLines="4"
+        android:textScaleX="1" />
+
+    <Button
+        android:id="@+id/email_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送到我们的邮箱"
+        android:textSize="25sp"/>
+
+</LinearLayout>

@@ -31,6 +31,7 @@
             android:checked="true"
             android:gravity="center"
             android:paddingLeft="0dp"
+            android:drawableTop="@drawable/phone_drawable"
             android:text="锁机" />
         <!--            android:drawableTop="@drawable/msg_drawable"-->
 
@@ -42,6 +43,7 @@
             android:button="@null"
             android:gravity="center"
             android:paddingLeft="0dp"
+            android:drawableTop="@drawable/record_drawable"
             android:text="记录" />
         <!--            android:drawableTop="@drawable/people_drawable"-->
 
@@ -51,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
+            android:drawableTop="@drawable/me_drawable"
             android:gravity="center"
             android:paddingLeft="0dp"
             android:text="我" />

@@ -1,0 +1,53 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eventItem"
+    android:layout_width="match_parent"
+    android:layout_height="139dp"
+    android:visibility="visible"
+    app:cardElevation="4dp"
+    android:clickable="true"
+
+    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="40dp">
+
+                        <LinearLayout
+                            android:layout_width="265dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/eventName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:fontFamily="sans-serif-black"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                               android:text="Some Random Text" />
+
+                            <TextView
+                                android:id="@+id/eventTime"
+                                android:layout_width="265dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:text="10 minutes"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_set"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:text="SET" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+

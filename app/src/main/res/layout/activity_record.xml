@@ -2,27 +2,29 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.tomato.RecordPageInfo">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
 
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="124dp"
-            android:layout_margin="20dp"
+            android:layout_height="30dp"
             android:orientation="horizontal">
 
-
-            <TextView
-                android:id="@+id/tv5"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:text="今日锁机次数" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="今日锁机次数"
+            android:textColor="@color/black" />ji
 
             <TextView
                 android:id="@+id/tv6"
@@ -30,7 +32,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:text="今日锁机时间" />
+                android:text="今日锁机时间"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/tv7"
@@ -38,54 +41,129 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:text="今日强行退出次数" />
+                android:text="今日强行退出次数"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_lock_times"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="80dp"/>
+
+            <TextView
+                android:id="@+id/tv_lock_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="80dp"/>
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="80dp"/>
         </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="近七天锁机时间图表" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145px"
+            android:orientation="horizontal"
+            android:id="@+id/buttonbarList3">
+
+            <Button
+                android:text="DAY"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:id="@+id/daybuttonlist3"
+                android:background="@drawable/bt_layout" />
 
 
+            <Button
+                android:text="MONTH"
+                android:layout_width="0px"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthbuttonlist3"
+                android:background="@drawable/bt_layout" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
-        <TextView
-            android:id="@+id/textView13"
+            <Button
+                android:text="YEAR"
+                android:layout_width="0px"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearbuttonlist3"
+                android:background="@drawable/bt_layout" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="近七天锁机时间图表"
-            android:gravity="center"/>
-        <com.github.mikephil.charting.charts.BarChart
-            android:id="@+id/bar_chart"
-            android:layout_width="match_parent"
-            android:layout_height="215dp"
-            android:layout_marginBottom="8dp"
-            android:layout_weight="1" />
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="近七天锁机次数图表"
-            android:gravity="center"/>
-        <com.github.mikephil.charting.charts.PieChart
-            android:id="@+id/pie_chart"
-            android:layout_width="match_parent"
-            android:layout_height="215dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1" />
-    </LinearLayout>
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/AppStatisticsList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/ActionBarList3"
+                    android:layout_below="@+id/pie_chart" />
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:orientation="vertical">
-
-        <ListView
-            android:id="@+id/lv_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
+            android:layout_height="wrap_content"
+            android:id="@+id/ActionBarList3"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:id="@+id/OpenButton"
+                android:text="权限"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
     </LinearLayout>
